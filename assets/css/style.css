@@ -7,12 +7,12 @@
 nav {
   display: flex;
   position: fixed;
-  background-color: black;
+  background-color: #2a607c;
   color: white;
   width: 100%;
   overflow: auto;
-  height: auto;
-  border-bottom: 5px solid yellow;
+  height: 75px;
+  border-bottom: 10px solid lightgray;
 }
 nav h1 {
   flex: 1;
@@ -21,6 +21,8 @@ nav h1 {
 
 nav ul {
   display: flex;
+  align-items: center;
+  font-size: large;
 }
 nav li {
   list-style: none;
@@ -29,12 +31,87 @@ nav li {
 
 nav li:hover {
   cursor: pointer;
-  text-decoration: 1px solid yellow overline;
+  text-decoration: 1px solid lightgray underline;
 }
 
-@media (max-width: 510px) {
+.padding-top {
+  padding-top: 100px;
+}
+
+.info-section {
+  margin: 0 50px;
+  display: flex;
+}
+
+.info-header {
+  font-size: xx-large;
+  text-align: right;
+  padding-right: 10px;
+  width: 125px;
+  color: #2a607c;
+}
+
+#ul-flex {
+  display: flex;
+  align-items: center;
+}
+
+#ul-flex li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 75px;
+}
+
+#ul-flex li a {
+  text-decoration: none;
+  color: black;
+}
+
+.info-content {
+  border-left: 3px solid lightgray;
+  padding-left: 10px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+@media (max-width: 765px) {
+  #ul-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 5px;
+  }
+  #ul-flex li {
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 520px) {
   nav {
     flex-direction: column;
     align-items: center;
+  }
+  .info-section {
+    flex-direction: column;
+    margin: 0 5px;
+  }
+  .info-header {
+    text-align: left;
+    font-size: x-large;
+    padding-bottom: 10px;
+    width: fit-content;
+  }
+  .info-content {
+    padding-right: 13px;
+  }
+  #ul-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 5px;
+  }
+  #ul-flex li {
+    padding-bottom: 10px;
   }
 }
