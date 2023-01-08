@@ -17,46 +17,85 @@
       <h1>Portfolio</h1>
 
       <ul>
-        <li>Amount Me</li>
-        <li>Work</li>
-        <li>Contact Me</li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
         <li>Resume</li>
       </ul>
     </nav>
 
     <section class="info-section padding-top">
-      <h1 class="info-header">About Me</h1>
-      <p class="info-content">
-        Hi, my name is Tzvi ('Steve') Neiman, and I am a full-stack developer.
+      <h1 class="info-header" id="about-me">About Me</h1>
+      <div class="info-content">
+        <p>
+          Hi, my name is Tzvi ('Steve') Neiman, and I am a full-stack developer.
+        </p>
         <br />
+        <p>
+          I currently work for JCM Living as a Software Developer while taking
+          night classes at Rutgers Coding Bootcamp.
+        </p>
         <br />
-        I currently work for JCM Living as a Software Developer while taking
-        night classes at Rutgers Coding Bootcamp.
+        <p>
+          Before changing my role at JCM Living, I was a Property Manager there
+          for seven years. So when I decided to change Careers, I started with
+          tweaking and adding new features to help the company be more
+          productive and, at the same time, build helpful components for the end
+          users, which for many years was me.
+        </p>
         <br />
-        <br />
-        Before changing my role at JCM Living, I was a Property Manager there
-        for seven years. So when I decided to change Careers, I started with
-        tweaking and adding new features to help the company be more productive
-        and, at the same time, build helpful components for the end users, which
-        for many years was me.
-        <br />
-        <br />
-        In my free time, I enjoy reading, watching a bit of TV, and taking time
-        to continue building my career skills. My long-term goal is to continue
-        growing my career, continue satisfying clients, and help other aspiring
-        software developers reach their goals and max potential.
-      </p>
+        <p>
+          In my free time, I enjoy reading, watching a bit of TV, and taking
+          time to continue building my career skills. My long-term goal is to
+          continue growing my career, continue satisfying clients, and help
+          other aspiring software developers reach their goals and max
+          potential.
+        </p>
+      </div>
     </section>
 
-    <section class="info-section padding-top">
+    <section class="info-section padding-top" id="work">
+      <h1 class="info-header">Projects</h1>
+      <div class="info-content">
+        <div class="project-group">
+          <div class="row">
+            <div class="project first-project" id="Horiseon">
+              <a
+                target="_blank"
+                href="https://tneiman19.github.io/Rutgers-Module1/"
+              >
+                <p>Horiseon</p></a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="project"><p>Placeholder</p></div>
+            <div class="project"><p>Placeholder</p></div>
+          </div>
+          <div class="row">
+            <div class="project"><p>Placeholder</p></div>
+            <div class="project"><p>Placeholder</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section padding-top" id="contact-me">
       <h1 class="info-header">Contact Me</h1>
 
       <ul class="info-content" id="ul-flex">
-        <li>(732)-702-1495</li>
-        <li><a target="_blank" href="mailto:tneiman19@gmail.com">tneiman19@gmail.com</a></li>
-        <li><a target="_blank" href="https://github.com/tneiman19">GitHub</a></li>
+        <li id="phone">
+          <a href="tel:+17327021495"> (732)-702-1495</a>
+        </li>
+        <li id="email">
+          <a target="_blank" href="mailto:tneiman19@gmail.com">
+            tneiman19@gmail.com</a
+          >
+        </li>
+        <li id="github">
+          <a target="_blank" href="https://github.com/tneiman19">GitHub</a>
+        </li>
       </ul>
-
     </section>
   </body>
 </html>

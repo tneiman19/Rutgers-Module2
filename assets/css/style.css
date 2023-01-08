@@ -13,10 +13,17 @@ nav {
   overflow: auto;
   height: 75px;
   border-bottom: 10px solid lightgray;
+overflow: hidden;
 }
 nav h1 {
   flex: 1;
   align-self: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  overflow: auto;
 }
 
 nav ul {
@@ -51,6 +58,56 @@ nav li:hover {
   color: #2a607c;
 }
 
+.info-content {
+  border-left: 3px solid lightgray;
+  padding-left: 10px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.project-group {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  gap: 25px;
+}
+
+.project {
+  border: 5px solid #2a607c;
+  height: 100px;
+  width: 50%;
+  background-image: url("../images/placeholder750x450.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.project p {
+  font-weight: bold;
+  font-size: large;
+  padding: 0 5px;
+  background-color: #2a607c;
+  color: white;
+  width: max-content;
+}
+
+
+
+#Horiseon {
+  background-image: url("../images/Screenshot-of-page.png");
+}
+
+.first-project {
+  height: 200px;
+  width: 100%;
+}
+
 #ul-flex {
   display: flex;
   align-items: center;
@@ -69,14 +126,7 @@ nav li:hover {
   color: black;
 }
 
-.info-content {
-  border-left: 3px solid lightgray;
-  padding-left: 10px;
-  flex: 1;
-  justify-content: space-between;
-}
-
-@media (max-width: 765px) {
+@media (max-width: 800px) {
   #ul-flex {
     flex-direction: column;
     align-items: flex-start;
@@ -85,6 +135,15 @@ nav li:hover {
   #ul-flex li {
     padding-bottom: 10px;
     padding-right: 0;
+  }
+  #phone::before {
+    content: "📱";
+  }
+  #email::before {
+    content: "📧";
+  }
+  #github::before {
+    content: "💻";
   }
 }
 
