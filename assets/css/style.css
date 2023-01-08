@@ -13,7 +13,7 @@ nav {
   overflow: auto;
   height: 75px;
   border-bottom: 10px solid lightgray;
-overflow: hidden;
+  overflow: hidden;
 }
 nav h1 {
   flex: 1;
@@ -65,47 +65,37 @@ nav li:hover {
   justify-content: space-between;
 }
 
-.project-group {
+.card-container {
   display: flex;
-  gap: 25px;
-  flex-direction: column;
-  max-width: 600px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  gap: 25px;
+  gap: 5px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.project {
-  border: 5px solid #2a607c;
-  height: 100px;
-  width: 50%;
-  background-image: url("../images/placeholder750x450.png");
+.card {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  margin: 0 50px;
+}
+
+.card:nth-child(1) {
+  background-image: url("../images/Screenshot-of-page.png");
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.project p {
-  font-weight: bold;
-  font-size: large;
-  padding: 0 5px;
-  background-color: #2a607c;
-  color: white;
-  width: max-content;
-}
-
-
-
-#Horiseon {
-  background-image: url("../images/Screenshot-of-page.png");
-}
-
-.first-project {
-  height: 200px;
   width: 100%;
+}
+
+a.card {
+  text-decoration: none;
+  background-color: #2a607c;
+}
+
+article p {
+  background-color: lightgray;
+  color: #2a607c;
+  position: relative;
+  top: 50%;
 }
 
 #ul-flex {
@@ -126,6 +116,25 @@ nav li:hover {
   color: black;
 }
 
+#phone::before {
+  content: "📱";
+}
+#email::before {
+  content: "📧";
+}
+#github::before {
+  content: "💻";
+}
+
+@media (max-width: 1225px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   #ul-flex {
     flex-direction: column;
@@ -135,15 +144,6 @@ nav li:hover {
   #ul-flex li {
     padding-bottom: 10px;
     padding-right: 0;
-  }
-  #phone::before {
-    content: "📱";
-  }
-  #email::before {
-    content: "📧";
-  }
-  #github::before {
-    content: "💻";
   }
 }
 
