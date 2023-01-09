@@ -78,15 +78,15 @@ nav li:hover {
   width: 300px;
   height: 150px;
   margin: 0 50px;
+  background-image: url("../images/placeholder750x450.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .card:nth-child(1) {
   background-image: url("../images/HoriseonScreenshot.png");
-  background-position: center;
-  background-size: cover;
   width: 100%;
 }
-
 a.card {
   text-decoration: none;
   background-color: darkgray;
@@ -132,7 +132,7 @@ article p {
 #github::before {
   content: "💻";
 }
-#resume{
+#resume {
   padding-bottom: 50px;
 }
 
