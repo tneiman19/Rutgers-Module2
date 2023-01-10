@@ -16,17 +16,19 @@ nav {
   overflow: hidden;
   z-index: 1;
 }
+
+/* For the nav bar log/text/Image*/
 nav h1 {
   flex: 1;
   align-self: center;
 }
-
+/*For the nav bar links*/
 nav a {
   color: white;
   text-decoration: none;
   overflow: auto;
 }
-
+/*For the nave bar list items*/
 nav ul {
   display: flex;
   align-items: center;
@@ -37,20 +39,24 @@ nav li {
   padding: 10px;
 }
 
+/*Style when hovering over the nav bar links*/
 nav li:hover {
   cursor: pointer;
   text-decoration: 1px solid lightgray underline;
 }
 
+/*This is used to give each section padding in top of the parent element*/
 .padding-top {
   padding-top: 100px;
 }
 
+/*This is for the container for each section*/
 .info-section {
   margin: 0 50px;
   display: flex;
 }
 
+/*This is for the text header for each section*/
 .info-header {
   font-size: xx-large;
   text-align: right;
@@ -59,39 +65,51 @@ nav li:hover {
   color: #2a607c;
 }
 
+/*This is used for the content of each section*/
 .info-content {
   border-left: 3px solid lightgray;
   padding-left: 10px;
   flex: 1;
   justify-content: space-between;
+  display: flex;
+}
+/*This is for the author photo*/
+#myPhoto {
+  max-height: 100px;
+  max-width: 200px;
+  padding-right: 10px;
 }
 
+/*This is for the container displaying the project cards*/
 .card-container {
   display: flex;
   gap: 5px;
   width: 100%;
   flex-wrap: wrap;
 }
-
+/*This is for each individual project card*/
 .card {
   display: flex;
   width: 300px;
   height: 150px;
-  margin: 0 50px;
+  margin: 10px;
   background-image: url("../images/placeholder750x450.png");
   background-position: center;
   background-size: cover;
 }
 
+/*This is the image for the first project card*/
 .card:nth-child(1) {
   background-image: url("../images/HoriseonScreenshot.png");
   width: 100%;
 }
+
+/*This is for the card/link */
 a.card {
   text-decoration: none;
-  background-color: darkgray;
 }
 
+/*This is for the text on each card with the project name*/
 article p {
   background-color: lightgray;
   color: #2a607c;
@@ -99,7 +117,12 @@ article p {
   top: 50%;
   font-weight: bold;
 }
-
+/*This is for the text on each card with the project languages*/
+.languages {
+  font-style: italic;
+  font-size: small;
+}
+/*The ul-flex is used in the contact me section*/
 #ul-flex {
   display: flex;
   align-items: center;
@@ -118,11 +141,7 @@ article p {
   color: black;
 }
 
-.languages {
-  font-style: italic;
-  font-size: small;
-}
-
+/*This is adding icons before the contact me list items*/
 #phone::before {
   content: "📱";
 }
@@ -136,6 +155,7 @@ article p {
   padding-bottom: 50px;
 }
 
+/*Used for the page footer*/
 footer {
   position: fixed;
   bottom: 0;
@@ -168,7 +188,7 @@ footer {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -193,5 +213,12 @@ footer {
   }
   #ul-flex li {
     padding-bottom: 10px;
+  }
+  #about-Section {
+    flex-direction: column;
+  }
+  #myPhoto {
+    padding-bottom: 10px;
+    align-self: center;
   }
 }
