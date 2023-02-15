@@ -104,6 +104,10 @@ nav li:hover {
   width: 100%;
 }
 
+.card:nth-child(2) {
+  background-image: url("../images/quotes.png");
+}
+
 /*This is for the card/link */
 a.card {
   text-decoration: none;
