@@ -108,6 +108,9 @@ nav li:hover {
   background-image: url("../images/quotes.png");
 }
 
+.card:nth-child(3) {
+  background-image: url("../images/project-nexus-aboutus.jpeg");
+}
 /*This is for the card/link */
 a.card {
   text-decoration: none;
